@@ -8,24 +8,25 @@ import { AuthModule } from './modules/auth/auth.module';
 import { AdminModule } from './modules/admin/admin.module';
 import { IndexModule } from './modules/index/index.module';
 import { AdminController } from './modules/admin/admin.controller';
+import { DbModule } from './common/db/db.module';
 import Next from 'next';
-import path from 'path';
 
 @Module({
   imports: [
-    AuthModule,
-    AdminModule,
-    IndexModule,
     RenderModule.forRootAsync(
       Next({
         dev: process.env.NODE_ENV !== 'production',
-        dir: "./src/client",
+        dir: './src/client',
         conf: { useFilesystemPublicRoutes: false },
       }),
       {
-        viewsDir: null
-      }
+        viewsDir: null,
+      },
     ),
+    AuthModule,
+    AdminModule,
+    IndexModule,
+    DbModule,
   ],
   controllers: [AppController, AuthController, AdminController],
   providers: [AppService],

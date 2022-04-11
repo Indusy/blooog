@@ -666,6 +666,11 @@
   resolved "https://registry.yarnpkg.com/@nestjs/mapped-types/-/mapped-types-1.0.1.tgz#78b62041c7a407db4a90eb140567321602bed18e"
   integrity sha512-NFvofzSinp00j5rzUd4tf+xi9od6383iY0JP7o0Bnu1fuItAUkWBgc4EKuIQ3D+c2QI3i9pG1kDWAeY27EMGtg==
 
+"@nestjs/mongoose@^9.0.3":
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/@nestjs/mongoose/-/mongoose-9.0.3.tgz#0b7d1829051c2f1441142070077fdbd060bdfe5a"
+  integrity sha512-y3M4LKVUP28HSp7hO7dXGvhs4PzpVI6LyIDqunlnzDdQhWtqaaxhW7VomqY8esOSv7otpF1v/vcCvoQVtSW4qA==
+
 "@nestjs/platform-express@^8.0.0":
   version "8.4.4"
   resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-8.4.4.tgz#c01de14ddc9ba6f26e3290cc165c784a64071d98"
@@ -980,13 +985,6 @@
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-1.3.2.tgz#93e25bf9ee75fe0fd80b594bc4feb0e862111b5a"
   integrity sha512-YATxVxgRqNH6nHEIsvg6k2Boc1JHI9ZbH5iWFFv/MTkchz3b1ieGDa5T0a9RznNdI0KhVbdbWSN+KWWrQZRxTw==
-
-"@types/mongoose@^5.11.97":
-  version "5.11.97"
-  resolved "https://registry.yarnpkg.com/@types/mongoose/-/mongoose-5.11.97.tgz#80b0357f3de6807eb597262f52e49c3e13ee14d8"
-  integrity sha512-cqwOVYT3qXyLiGw7ueU2kX9noE8DPGRY6z8eUxudhXY8NZ7DMKYAxyZkLSevGfhCX3dO/AoX5/SO9lAzfjon0Q==
-  dependencies:
-    mongoose "*"
 
 "@types/next@^9.0.0":
   version "9.0.0"
@@ -3984,7 +3982,7 @@ mongodb@4.3.1:
   optionalDependencies:
     saslprep "^1.0.3"
 
-mongoose@*, mongoose@^6.2.10:
+mongoose@^6.2.10:
   version "6.2.10"
   resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-6.2.10.tgz#ba401b710d7b877453389d4ad7347c272e8ff794"
   integrity sha512-Yp+6UH5M0AlxAVGdC2/Deq0St+2qW73oKCnhJDr83bOZ12eflTLTT5uQF0p6KzvtFj86XWbq/7ApvO4yW6h1sA==
