@@ -1,10 +1,11 @@
-import { Controller, Get, Query, Req, Res } from '@nestjs/common';
-import nextServer from '../../../next.app';
+import { Controller, Get, Query, Render, Req, Res } from '@nestjs/common';
+
 
 @Controller('index')
 export class IndexController {
   @Get()
+  @Render("/")
   async test(@Req() req, @Res() res) {
-    return await nextServer.render(req, res, "/")
+    res.render("index")
   }
 }

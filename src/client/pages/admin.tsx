@@ -2,10 +2,10 @@ import React from "react";
 import { NextPage } from "next";
 import { hot } from "react-hot-loader/root";
 
-const IndexPage: NextPage = () => {
+const AdminPage: NextPage = () => {
   return (
-    <div>Index Page</div>
-  );
+    <div>Admin Page</div>
+  )
 }
 
-export default hot(IndexPage);
+export default hot(AdminPage);

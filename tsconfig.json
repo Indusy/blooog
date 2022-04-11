@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "jsx": "react",
+    "jsx": "preserve",
     "module": "commonjs",
     "declaration": true,
     "removeComments": true,
@@ -29,6 +29,6 @@
     "esModuleInterop": true,
 
   },
-  "include": ["src/server/"],
-  "exclude": ["src/client"]
+  "include": ["src/server/", "src/server/main.ts"],
+  "exclude": ["src/client/"]
 }
