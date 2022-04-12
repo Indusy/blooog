@@ -19,7 +19,7 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
-    // "isolatedModules": true,
+    "isolatedModules": true,
     "resolveJsonModule": true,
     "moduleResolution": "node",
     "esModuleInterop": true

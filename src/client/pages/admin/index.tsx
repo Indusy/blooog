@@ -1,6 +1,5 @@
 import React from "react";
 import { NextPage } from "next";
-import { hot } from "react-hot-loader/root";
 
 const AdminPage: NextPage = () => {
   return (
@@ -8,4 +7,4 @@ const AdminPage: NextPage = () => {
   )
 }
 
-export default hot(AdminPage);
+export default AdminPage;

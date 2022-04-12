@@ -7,8 +7,8 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  @Render("/")
+  @Render("/index")
   getHello(@Res() res: RenderableResponse) {
-    res.render("Index")
+    res.render("/index")
   }
 }
