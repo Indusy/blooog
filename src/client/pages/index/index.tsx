@@ -1,7 +1,6 @@
 import React from "react";
 import { NextPage } from "next";
 import { Button } from "antd";
-import 'antd/dist/antd.css';
 
 const IndexPage: NextPage = () => {
   return (

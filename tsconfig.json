@@ -22,8 +22,9 @@
     "isolatedModules": true,
     "resolveJsonModule": true,
     "moduleResolution": "node",
-    "esModuleInterop": true
+    "esModuleInterop": true,
   },
-  "include": ["src/server/", "src/server/main.ts"],
-  "exclude": ["src/client/"]
+  "include": ["src/server/", "main.ts", "src/utils"],
+  "exclude": ["src/client/"],
+  
 }

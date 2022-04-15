@@ -14,8 +14,6 @@ export class AdminController {
   })
   @Render("/admin")
   async test(@Req() req, @Res() res) {
-    console.log("admin");
-    
     res.render("admin")
   }
 

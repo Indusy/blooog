@@ -10,6 +10,7 @@ import { IndexModule } from './modules/index/index.module';
 import { AdminController } from './modules/admin/admin.controller';
 import { DbModule } from './common/db/db.module';
 import { InstallModule } from './modules/install/install.module';
+import { ArchivesModule } from './modules/archives/archives.module';
 import Next from 'next';
 
 @Module({
@@ -29,6 +30,7 @@ import Next from 'next';
     IndexModule,
     DbModule,
     InstallModule,
+    ArchivesModule,
   ],
   controllers: [AppController, AuthController, AdminController],
   providers: [AppService],
