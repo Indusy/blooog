@@ -8,6 +8,7 @@ export class ArchivesController {
 
   @Get()
   async index() {
-    return this.archivesService.markdownd(path.resolve(__dirname, "../../../../../blooog/_posts/你好啊.md"))
+    const article = this.archivesService.markdownd(path.resolve(__dirname, "../../../../../blooog/_posts/你好啊.md"));
+    return this.archivesService.injectTemplate(path.resolve(__dirname, "../../../../../blooog/themes/yanren/index.ejs"), article)
   }
 }
