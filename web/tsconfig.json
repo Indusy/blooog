@@ -1,7 +1,6 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    "baseUrl": ".",
     "target": "ES2018",
     "module": "commonjs",
     "moduleResolution": "node",
@@ -11,19 +10,22 @@
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "stripInternal": true,
-    "skipLibCheck": true,
     "pretty": true,
-    "declaration": true,
+    "declaration": false,
+    "strict": true,
+    "noEmit": true,
+    "baseUrl": "./",
+    "strictNullChecks": true,
     "esModuleInterop": true,
-    "outDir": "dist",
-    "typeRoots": [ "./typings", "./node_modules/@types"],
+    "jsx": "react",
     "paths": {
-      "@/*": ["./src/*"],
-      "~/*": ["./*"]
+      "@/*": ["./*"],
+      "~/*": ["../*"],
+      "_build/*": ["../build/*"]
     }
   },
   "include": [
-    "src"
+    "."
   ]
 }
 
